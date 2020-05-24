@@ -4,11 +4,9 @@ import Home from "./containers/Home";
 import Login from "./containers/Login";
 import Navbar from "./components/Navbar";
 
-import "./App.css";
-
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Navbar />
         <Switch>

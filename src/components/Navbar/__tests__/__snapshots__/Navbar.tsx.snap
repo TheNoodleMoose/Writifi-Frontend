@@ -2,23 +2,36 @@
 
 exports[`renders correctly 1`] = `
 <div>
-  <nav>
-    <ul>
-      <li>
-        <a
-          href="/"
+  <nav
+    class="sc-AxirZ eJbqkC"
+  >
+    <a
+      class="sc-AxhCb dVuYXT"
+      href="/"
+    >
+      <div
+        class="sc-AxiKw xyHFi"
+      >
+        <svg>
+          Logo.svg
+        </svg>
+        <p
+          class="sc-AxhUy ikMnzY"
         >
-          Home
-        </a>
-      </li>
-      <li>
-        <a
-          href="/login"
-        >
-          Login
-        </a>
-      </li>
-    </ul>
+          ritifi
+        </p>
+      </div>
+    </a>
+    <a
+      href="/login"
+    >
+      <button
+        class="sc-AxjAm ehWnyF"
+        data-testid="Button"
+      >
+        Login
+      </button>
+    </a>
   </nav>
 </div>
 `;
