@@ -1,5 +1,7 @@
 # Writifi Frontend - Created with Create-React-App
 
+![](https://github.com/TheNoodleMoose/Writifi-Frontend-React/workflows/Node%20CI/badge.svg)
+
 Utilizes TypeScript, React Router v4, React-Apollo 🚀, Jest ⌛, @testing-Library/react 🐙, and Styled-components 💅
 
 ## Available Scripts
