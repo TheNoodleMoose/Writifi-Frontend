@@ -9,7 +9,7 @@ interface ButtonProps {
 const Button = ({ text, handleClick }: ButtonProps) => {
   return (
     <StyledButton data-testid="Button" onClick={handleClick}>
-      {text}
+      <ButtonText>{text}</ButtonText>
     </StyledButton>
   );
 };
@@ -19,8 +19,19 @@ export default Button;
 const StyledButton = styled.button`
   background: transparent;
   border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: palevioletred;
-  margin: 0 1em;
-  padding: 0.25em 1em;
+  border: 2px solid #2c3e50;
+  color: #2c3e50;
+  padding: 0 20px;
+
+  :hover {
+    color: white;
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+  }
+`;
+
+const ButtonText = styled.p`
+  font-weight: bold;
+  font-size: 1em;
+  margin: 10px 0;
 `;

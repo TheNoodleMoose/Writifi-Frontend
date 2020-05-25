@@ -2,10 +2,149 @@
 
 exports[`renders correctly 1`] = `
 <div>
-  <div>
-    <p>
-      This is the home page
-    </p>
+  <div
+    class="sc-fzpans SCJOM"
+  >
+    <div
+      class="sc-AxheI kbYHTb"
+    >
+      <div
+        class="sc-Axmtr cSVvnI"
+      >
+        <svg
+          height="200"
+          width="200"
+        >
+          Logo.svg
+        </svg>
+        <div
+          class="sc-fzoLsD fqEnxe"
+        >
+          <h1
+            class="sc-fzozJi hTznYj"
+          >
+            Endless stories at the tips of your fingers.
+          </h1>
+          <h1
+            class="sc-fzozJi hTznYj"
+          >
+            Create and Discover now.
+          </h1>
+        </div>
+        <div
+          class="sc-AxmLO jDlzOx"
+        >
+          <a
+            href="/signup"
+          >
+            <button
+              class="sc-AxhUy lbvLQO"
+              data-testid="Button"
+            >
+              <p
+                class="sc-AxgMl kXTpYq"
+              >
+                Start Discovering
+              </p>
+            </button>
+          </a>
+          <button
+            class="sc-AxhUy lbvLQO"
+            data-testid="Button"
+          >
+            <p
+              class="sc-AxgMl kXTpYq"
+            >
+              Why Writifi?
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <aside
+      class="sc-fzplWN brClyP"
+    >
+      <div
+        class="sc-AxjAm ciKidB"
+      >
+        <div
+          class="sc-AxirZ fxlTtO"
+          type="Featured"
+        >
+          <h2>
+            Featured Reading
+          </h2>
+        </div>
+        <div
+          class="sc-AxiKw llAaWr"
+        >
+          <p
+            class="sc-AxhCb cwwnQe"
+            type="Featured"
+          >
+            Lorem ipsum dolor sit Molestias?
+          </p>
+          <p
+            class="sc-AxhCb cwwnQe"
+            type="Featured"
+          >
+            Lorem ipsum dolor sit Molestias?
+          </p>
+          <p
+            class="sc-AxhCb cwwnQe"
+            type="Featured"
+          >
+            Lorem ipsum dolor sit Molestias?
+          </p>
+          <p
+            class="sc-AxhCb cwwnQe"
+            type="Featured"
+          >
+            Lorem ipsum dolor sit Molestias?
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-AxjAm ciKidB"
+      >
+        <div
+          class="sc-AxirZ kbkaQd"
+          type="EditorsChoice"
+        >
+          <h2>
+            Editor's Choice
+          </h2>
+        </div>
+        <div
+          class="sc-AxiKw llAaWr"
+        >
+          <p
+            class="sc-AxhCb cwwnQe"
+            type="EditorsChoice"
+          >
+            Lorem ipsum dolor sit Molestias?
+          </p>
+          <p
+            class="sc-AxhCb cwwnQe"
+            type="EditorsChoice"
+          >
+            Lorem ipsum dolor sit Molestias?
+          </p>
+          <p
+            class="sc-AxhCb cwwnQe"
+            type="EditorsChoice"
+          >
+            Lorem ipsum dolor sit Molestias?
+          </p>
+          <p
+            class="sc-AxhCb cwwnQe"
+            type="EditorsChoice"
+          >
+            Lorem ipsum dolor sit Molestias?
+          </p>
+        </div>
+      </div>
+    </aside>
   </div>
 </div>
 `;

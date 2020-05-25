@@ -7,15 +7,20 @@ import { ReactComponent as LogoSvg } from "../../assets/svgs/Logo.svg";
 const Navbar = () => {
   return (
     <NavContainer>
-      <TitleLink to="/">
+      <NavLink to="/">
         <TitleContainer>
           <LogoSvg />
           <TitleText>ritifi</TitleText>
         </TitleContainer>
-      </TitleLink>
-      <Link to="/login">
-        <Button text="Login" />
-      </Link>
+      </NavLink>
+      <LinkContainer>
+        <NavLink to="/signup">
+          <NavItemText>Sign up</NavItemText>
+        </NavLink>
+        <Link to="/login">
+          <Button text="Login" />
+        </Link>
+      </LinkContainer>
     </NavContainer>
   );
 };
@@ -23,11 +28,14 @@ const Navbar = () => {
 export default Navbar;
 
 const NavContainer = styled.nav`
-  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
+  padding: 20px 0;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-right: auto;
+  margin-left: auto;
 `;
 
 const TitleContainer = styled.div`
@@ -36,15 +44,32 @@ const TitleContainer = styled.div`
   justify-content: flex-end;
 `;
 
-const TitleLink = styled(Link)`
+const NavLink = styled(Link)`
   text-decoration: none;
 `;
 
-const TitleText = styled.p`
+const TitleText = styled.h2`
   font-size: 25px;
   color: #2c3e50;
   font-weight: bold;
   margin: 0;
   margin-left: -10px;
   text-decoration: none;
+`;
+
+const NavItemText = styled.p`
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c3e50;
+
+  :hover {
+    text-decoration: underline;
+  }
+`;
+
+const LinkContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 200px;
 `;

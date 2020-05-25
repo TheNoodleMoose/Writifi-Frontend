@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="sc-AxiKw fzekoS"
+  >
+    <div
+      class="sc-AxhCb bzzkfW"
+    >
+      <svg
+        height="200"
+        width="200"
+      >
+        Logo.svg
+      </svg>
+      <div
+        class="sc-AxheI fniENP"
+      >
+        <h1
+          class="sc-AxgMl kAyckS"
+        >
+          Endless stories at the tips of your fingers.
+        </h1>
+        <h1
+          class="sc-AxgMl kAyckS"
+        >
+          Create and Discover now.
+        </h1>
+      </div>
+      <div
+        class="sc-AxhUy dIrXSn"
+      >
+        <a
+          href="/signup"
+        >
+          <button
+            class="sc-AxjAm ekMElM"
+            data-testid="Button"
+          >
+            <p
+              class="sc-AxirZ gToTIx"
+            >
+              Start Discovering
+            </p>
+          </button>
+        </a>
+        <button
+          class="sc-AxjAm ekMElM"
+          data-testid="Button"
+        >
+          <p
+            class="sc-AxirZ gToTIx"
+          >
+            Why Writifi?
+          </p>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

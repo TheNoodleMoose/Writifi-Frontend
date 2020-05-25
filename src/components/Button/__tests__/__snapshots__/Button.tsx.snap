@@ -3,10 +3,14 @@
 exports[`renders correctly 1`] = `
 <div>
   <button
-    class="sc-AxjAm ehWnyF"
+    class="sc-AxjAm ekMElM"
     data-testid="Button"
   >
-    test
+    <p
+      class="sc-AxirZ gToTIx"
+    >
+      test
+    </p>
   </button>
 </div>
 `;

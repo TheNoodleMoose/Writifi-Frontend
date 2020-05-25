@@ -3,35 +3,53 @@
 exports[`renders correctly 1`] = `
 <div>
   <nav
-    class="sc-AxirZ eJbqkC"
+    class="sc-AxiKw UFbQu"
   >
     <a
-      class="sc-AxhCb dVuYXT"
+      class="sc-AxhUy bILkkK"
       href="/"
     >
       <div
-        class="sc-AxiKw xyHFi"
+        class="sc-AxhCb fbHzsa"
       >
         <svg>
           Logo.svg
         </svg>
-        <p
-          class="sc-AxhUy ikMnzY"
+        <h2
+          class="sc-AxgMl etuHJO"
         >
           ritifi
-        </p>
+        </h2>
       </div>
     </a>
-    <a
-      href="/login"
+    <div
+      class="sc-Axmtr driRfU"
     >
-      <button
-        class="sc-AxjAm ehWnyF"
-        data-testid="Button"
+      <a
+        class="sc-AxhUy bILkkK"
+        href="/signup"
       >
-        Login
-      </button>
-    </a>
+        <p
+          class="sc-AxheI kQFmey"
+        >
+          Sign up
+        </p>
+      </a>
+      <a
+        href="/login"
+      >
+        <button
+          class="sc-AxjAm ekMElM"
+          data-testid="Button"
+        >
+          <p
+            class="sc-AxirZ gToTIx"
+          >
+            Login
+          </p>
+        </button>
+      </a>
+    </div>
   </nav>
 </div>
 `;
