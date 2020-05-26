@@ -2,6 +2,8 @@
 
 ![](https://github.com/TheNoodleMoose/Writifi-Frontend-React/workflows/Node%20CI/badge.svg)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/018b4618-47cc-4e50-ba7c-b1a5588a6e54/deploy-status)](https://app.netlify.com/sites/writifi/deploys)
+
 Utilizes TypeScript, React Router v4, React-Apollo 🚀, Jest ⌛, @testing-Library/react 🐙, and Styled-components 💅
 
 ## Available Scripts
