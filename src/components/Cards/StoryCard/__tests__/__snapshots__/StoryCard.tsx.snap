@@ -2,10 +2,33 @@
 
 exports[`renders correctly 1`] = `
 <div>
-  <div>
-    <p>
-      This is a story card
+  <div
+    class="sc-AxjAm dHoa-dm"
+  >
+    <h3
+      class="sc-AxirZ iikLxs"
+    >
+      A cool story title
+    </h3>
+    <p
+      class="sc-AxiKw iybPXJ"
+    >
+      This is a placeholder description for the test...
     </p>
+    <div
+      class="sc-AxhCb hPxPbm"
+    >
+      <h3
+        class="sc-AxhUy kA-DEXK"
+      >
+        Christian Huffman
+      </h3>
+      <p
+        class="sc-AxgMl jFrhBS"
+      >
+        @ Some time...
+      </p>
+    </div>
   </div>
 </div>
 `;

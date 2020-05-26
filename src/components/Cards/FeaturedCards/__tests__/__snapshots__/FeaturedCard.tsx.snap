@@ -3,7 +3,7 @@
 exports[`renders correctly | Editors Choice 1`] = `
 <div>
   <div
-    class="sc-AxjAm ciKidB"
+    class="sc-AxjAm jjKCsO"
   >
     <div
       class="sc-AxirZ kbkaQd"
@@ -20,7 +20,7 @@ exports[`renders correctly | Editors Choice 1`] = `
         class="sc-AxhCb cwwnQe"
         type="EditorsChoice"
       >
-        Lorem ipsum dolor sit Molestias?
+        Lorem ipsum dolor sit Molestias? Lorem ipsum dolor sit Molestias?
       </p>
       <p
         class="sc-AxhCb cwwnQe"
@@ -32,7 +32,7 @@ exports[`renders correctly | Editors Choice 1`] = `
         class="sc-AxhCb cwwnQe"
         type="EditorsChoice"
       >
-        Lorem ipsum dolor sit Molestias?
+        Lorem ipsum dolor sit Molestias? Lorem ipsum dolor sit Molestias?Lorem ipsum dolor sit Molestias?
       </p>
       <p
         class="sc-AxhCb cwwnQe"
@@ -48,7 +48,7 @@ exports[`renders correctly | Editors Choice 1`] = `
 exports[`renders correctly | Featured 1`] = `
 <div>
   <div
-    class="sc-AxjAm ciKidB"
+    class="sc-AxjAm jjKCsO"
   >
     <div
       class="sc-AxirZ fxlTtO"
@@ -65,7 +65,7 @@ exports[`renders correctly | Featured 1`] = `
         class="sc-AxhCb cwwnQe"
         type="Featured"
       >
-        Lorem ipsum dolor sit Molestias?
+        Lorem ipsum dolor sit Molestias? Lorem ipsum dolor sit Molestias?
       </p>
       <p
         class="sc-AxhCb cwwnQe"
@@ -77,7 +77,7 @@ exports[`renders correctly | Featured 1`] = `
         class="sc-AxhCb cwwnQe"
         type="Featured"
       >
-        Lorem ipsum dolor sit Molestias?
+        Lorem ipsum dolor sit Molestias? Lorem ipsum dolor sit Molestias?Lorem ipsum dolor sit Molestias?
       </p>
       <p
         class="sc-AxhCb cwwnQe"

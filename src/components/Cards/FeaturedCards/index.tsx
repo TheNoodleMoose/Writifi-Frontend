@@ -22,9 +22,14 @@ const FeaturedCard = ({ type }: { type: FeaturedCardType }) => {
         <h2>{getType()}</h2>
       </TitleContainer>
       <ContentContainer>
+        <TitleText type={type}>
+          Lorem ipsum dolor sit Molestias? Lorem ipsum dolor sit Molestias?
+        </TitleText>
         <TitleText type={type}>Lorem ipsum dolor sit Molestias?</TitleText>
-        <TitleText type={type}>Lorem ipsum dolor sit Molestias?</TitleText>
-        <TitleText type={type}>Lorem ipsum dolor sit Molestias?</TitleText>
+        <TitleText type={type}>
+          Lorem ipsum dolor sit Molestias? Lorem ipsum dolor sit Molestias?Lorem
+          ipsum dolor sit Molestias?
+        </TitleText>
         <TitleText type={type}>Lorem ipsum dolor sit Molestias?</TitleText>
       </ContentContainer>
     </CardContainer>
@@ -38,7 +43,7 @@ interface StyleProps {
 }
 
 const CardContainer = styled.div`
-  min-width: 300px;
+  width: 300px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: white;

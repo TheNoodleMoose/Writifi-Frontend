@@ -3,16 +3,54 @@ import styled from "styled-components";
 import FeaturedCard, {
   FeaturedCardType
 } from "../../components/Cards/FeaturedCards";
+import StoryCard from "../../components/Cards/StoryCard";
 import Jumbotron from "../../components/Jumbotron";
 
 const Home = () => {
   return (
     <HomeContainer>
-      <Jumbotron />
-      <Sidebar>
-        <FeaturedCard type={FeaturedCardType.featured} />
-        <FeaturedCard type={FeaturedCardType.editorsChoice} />
-      </Sidebar>
+      <ContentContainer>
+        <Jumbotron />
+
+        <Sidebar>
+          <FeaturedCard type={FeaturedCardType.featured} />
+          <FeaturedCard type={FeaturedCardType.editorsChoice} />
+        </Sidebar>
+      </ContentContainer>
+      <CardContainer>
+        <StoryCard
+          title={"My cool story about something..."}
+          author={"Christian Huffman"}
+          createdAt={"some date in time"}
+          description={
+            "This is the description of my story to somewhat sums it up..."
+          }
+        />
+        <StoryCard
+          title={"My cool story about something..."}
+          author={"Christian Huffman"}
+          createdAt={"some date in time"}
+          description={
+            "This is the description of my story to somewhat sums it up..."
+          }
+        />
+        <StoryCard
+          title={"My cool story about something..."}
+          author={"Christian Huffman"}
+          createdAt={"some date in time"}
+          description={
+            "This is the description of my story to somewhat sums it up..."
+          }
+        />
+        <StoryCard
+          title={"My cool story about something..."}
+          author={"Christian Huffman"}
+          createdAt={"some date in time"}
+          description={
+            "This is the description of my story to somewhat sums it up..."
+          }
+        />
+      </CardContainer>
     </HomeContainer>
   );
 };
@@ -23,6 +61,8 @@ const HomeContainer = styled.div`
   width: 60%;
   margin: auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
 
   @media (max-width: 768px) {
@@ -35,4 +75,17 @@ const Sidebar = styled.aside`
   @media (max-width: 768px) {
     display: none;
   }
+`;
+
+const ContentContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;
+
+const CardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
 `;

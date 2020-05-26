@@ -3,148 +3,268 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
-    class="sc-fzpans SCJOM"
+    class="sc-fzqBZW llrcoi"
   >
     <div
-      class="sc-AxheI kbYHTb"
+      class="sc-fzoyAV jYYoNM"
     >
       <div
-        class="sc-Axmtr cSVvnI"
+        class="sc-fzplWN gHhTD"
       >
-        <svg
-          height="200"
-          width="200"
-        >
-          Logo.svg
-        </svg>
         <div
-          class="sc-fzoLsD fqEnxe"
+          class="sc-fznyAO gqaNFL"
         >
-          <h1
-            class="sc-fzozJi hTznYj"
+          <svg
+            height="200"
+            width="200"
           >
-            Endless stories at the tips of your fingers.
-          </h1>
-          <h1
-            class="sc-fzozJi hTznYj"
+            Logo.svg
+          </svg>
+          <div
+            class="sc-fzokOt gcdrkZ"
           >
-            Create and Discover now.
-          </h1>
-        </div>
-        <div
-          class="sc-AxmLO jDlzOx"
-        >
-          <a
-            href="/signup"
+            <h1
+              class="sc-fznZeY eqDpMx"
+            >
+              Endless stories at the tips of your fingers.
+            </h1>
+            <h1
+              class="sc-fznZeY eqDpMx"
+            >
+              Create and Discover now.
+            </h1>
+          </div>
+          <div
+            class="sc-fznKkj jewRRC"
           >
+            <a
+              href="/signup"
+            >
+              <button
+                class="sc-fzoLsD OgTwT"
+                data-testid="Button"
+              >
+                <p
+                  class="sc-fzpans jBkoMV"
+                >
+                  Start Discovering
+                </p>
+              </button>
+            </a>
             <button
-              class="sc-AxhUy lbvLQO"
+              class="sc-fzoLsD OgTwT"
               data-testid="Button"
             >
               <p
-                class="sc-AxgMl kXTpYq"
+                class="sc-fzpans jBkoMV"
               >
-                Start Discovering
+                Why Writifi?
               </p>
             </button>
-          </a>
-          <button
-            class="sc-AxhUy lbvLQO"
-            data-testid="Button"
+          </div>
+        </div>
+      </div>
+      <aside
+        class="sc-fzqNJr kcBmoJ"
+      >
+        <div
+          class="sc-AxjAm jjKCsO"
+        >
+          <div
+            class="sc-AxirZ fxlTtO"
+            type="Featured"
+          >
+            <h2>
+              Featured Reading
+            </h2>
+          </div>
+          <div
+            class="sc-AxiKw llAaWr"
           >
             <p
-              class="sc-AxgMl kXTpYq"
+              class="sc-AxhCb cwwnQe"
+              type="Featured"
             >
-              Why Writifi?
+              Lorem ipsum dolor sit Molestias? Lorem ipsum dolor sit Molestias?
             </p>
-          </button>
+            <p
+              class="sc-AxhCb cwwnQe"
+              type="Featured"
+            >
+              Lorem ipsum dolor sit Molestias?
+            </p>
+            <p
+              class="sc-AxhCb cwwnQe"
+              type="Featured"
+            >
+              Lorem ipsum dolor sit Molestias? Lorem ipsum dolor sit Molestias?Lorem ipsum dolor sit Molestias?
+            </p>
+            <p
+              class="sc-AxhCb cwwnQe"
+              type="Featured"
+            >
+              Lorem ipsum dolor sit Molestias?
+            </p>
+          </div>
+        </div>
+        <div
+          class="sc-AxjAm jjKCsO"
+        >
+          <div
+            class="sc-AxirZ kbkaQd"
+            type="EditorsChoice"
+          >
+            <h2>
+              Editor's Choice
+            </h2>
+          </div>
+          <div
+            class="sc-AxiKw llAaWr"
+          >
+            <p
+              class="sc-AxhCb cwwnQe"
+              type="EditorsChoice"
+            >
+              Lorem ipsum dolor sit Molestias? Lorem ipsum dolor sit Molestias?
+            </p>
+            <p
+              class="sc-AxhCb cwwnQe"
+              type="EditorsChoice"
+            >
+              Lorem ipsum dolor sit Molestias?
+            </p>
+            <p
+              class="sc-AxhCb cwwnQe"
+              type="EditorsChoice"
+            >
+              Lorem ipsum dolor sit Molestias? Lorem ipsum dolor sit Molestias?Lorem ipsum dolor sit Molestias?
+            </p>
+            <p
+              class="sc-AxhCb cwwnQe"
+              type="EditorsChoice"
+            >
+              Lorem ipsum dolor sit Molestias?
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <div
+      class="sc-fzoLag hVCPnY"
+    >
+      <div
+        class="sc-AxhUy fygIbw"
+      >
+        <h3
+          class="sc-AxgMl cDHFlD"
+        >
+          My cool story about something...
+        </h3>
+        <p
+          class="sc-AxheI bseEco"
+        >
+          This is the description of my story to somewhat sums it up...
+        </p>
+        <div
+          class="sc-Axmtr iIIBwQ"
+        >
+          <h3
+            class="sc-AxmLO lkchWc"
+          >
+            Christian Huffman
+          </h3>
+          <p
+            class="sc-fzozJi fOLmBr"
+          >
+            @ some date in time
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-AxhUy fygIbw"
+      >
+        <h3
+          class="sc-AxgMl cDHFlD"
+        >
+          My cool story about something...
+        </h3>
+        <p
+          class="sc-AxheI bseEco"
+        >
+          This is the description of my story to somewhat sums it up...
+        </p>
+        <div
+          class="sc-Axmtr iIIBwQ"
+        >
+          <h3
+            class="sc-AxmLO lkchWc"
+          >
+            Christian Huffman
+          </h3>
+          <p
+            class="sc-fzozJi fOLmBr"
+          >
+            @ some date in time
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-AxhUy fygIbw"
+      >
+        <h3
+          class="sc-AxgMl cDHFlD"
+        >
+          My cool story about something...
+        </h3>
+        <p
+          class="sc-AxheI bseEco"
+        >
+          This is the description of my story to somewhat sums it up...
+        </p>
+        <div
+          class="sc-Axmtr iIIBwQ"
+        >
+          <h3
+            class="sc-AxmLO lkchWc"
+          >
+            Christian Huffman
+          </h3>
+          <p
+            class="sc-fzozJi fOLmBr"
+          >
+            @ some date in time
+          </p>
+        </div>
+      </div>
+      <div
+        class="sc-AxhUy fygIbw"
+      >
+        <h3
+          class="sc-AxgMl cDHFlD"
+        >
+          My cool story about something...
+        </h3>
+        <p
+          class="sc-AxheI bseEco"
+        >
+          This is the description of my story to somewhat sums it up...
+        </p>
+        <div
+          class="sc-Axmtr iIIBwQ"
+        >
+          <h3
+            class="sc-AxmLO lkchWc"
+          >
+            Christian Huffman
+          </h3>
+          <p
+            class="sc-fzozJi fOLmBr"
+          >
+            @ some date in time
+          </p>
         </div>
       </div>
     </div>
-    <aside
-      class="sc-fzplWN brClyP"
-    >
-      <div
-        class="sc-AxjAm ciKidB"
-      >
-        <div
-          class="sc-AxirZ fxlTtO"
-          type="Featured"
-        >
-          <h2>
-            Featured Reading
-          </h2>
-        </div>
-        <div
-          class="sc-AxiKw llAaWr"
-        >
-          <p
-            class="sc-AxhCb cwwnQe"
-            type="Featured"
-          >
-            Lorem ipsum dolor sit Molestias?
-          </p>
-          <p
-            class="sc-AxhCb cwwnQe"
-            type="Featured"
-          >
-            Lorem ipsum dolor sit Molestias?
-          </p>
-          <p
-            class="sc-AxhCb cwwnQe"
-            type="Featured"
-          >
-            Lorem ipsum dolor sit Molestias?
-          </p>
-          <p
-            class="sc-AxhCb cwwnQe"
-            type="Featured"
-          >
-            Lorem ipsum dolor sit Molestias?
-          </p>
-        </div>
-      </div>
-      <div
-        class="sc-AxjAm ciKidB"
-      >
-        <div
-          class="sc-AxirZ kbkaQd"
-          type="EditorsChoice"
-        >
-          <h2>
-            Editor's Choice
-          </h2>
-        </div>
-        <div
-          class="sc-AxiKw llAaWr"
-        >
-          <p
-            class="sc-AxhCb cwwnQe"
-            type="EditorsChoice"
-          >
-            Lorem ipsum dolor sit Molestias?
-          </p>
-          <p
-            class="sc-AxhCb cwwnQe"
-            type="EditorsChoice"
-          >
-            Lorem ipsum dolor sit Molestias?
-          </p>
-          <p
-            class="sc-AxhCb cwwnQe"
-            type="EditorsChoice"
-          >
-            Lorem ipsum dolor sit Molestias?
-          </p>
-          <p
-            class="sc-AxhCb cwwnQe"
-            type="EditorsChoice"
-          >
-            Lorem ipsum dolor sit Molestias?
-          </p>
-        </div>
-      </div>
-    </aside>
   </div>
 </div>
 `;

@@ -29,6 +29,7 @@ export default Jumbotron;
 
 const JumboTronContainer = styled.div`
   display: flex;
+  width: 80%;
   justify-content: center;
   margin: 0 20px;
   background-color: aquamarine;
