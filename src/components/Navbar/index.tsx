@@ -32,10 +32,15 @@ const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
   margin-right: auto;
   margin-left: auto;
+
+  @media (max-width: 768px) {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -72,4 +77,8 @@ const LinkContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   min-width: 200px;
+
+  @media (max-width: 768px) {
+    justify-content: space-around;
+  }
 `;

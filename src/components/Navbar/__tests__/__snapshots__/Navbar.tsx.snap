@@ -3,7 +3,7 @@
 exports[`renders correctly 1`] = `
 <div>
   <nav
-    class="sc-AxiKw UFbQu"
+    class="sc-AxiKw kiKsws"
   >
     <a
       class="sc-AxhUy bILkkK"
@@ -23,7 +23,7 @@ exports[`renders correctly 1`] = `
       </div>
     </a>
     <div
-      class="sc-Axmtr driRfU"
+      class="sc-Axmtr dCNXqe"
     >
       <a
         class="sc-AxhUy bILkkK"

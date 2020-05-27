@@ -31,12 +31,12 @@ const JumboTronContainer = styled.div`
   display: flex;
   width: 80%;
   justify-content: center;
-  margin: 0 20px;
   background-color: aquamarine;
   padding: 20px 0;
   min-width: 300px;
   @media (max-width: 768px) {
     flex-direction: column;
+    width: 100%;
   }
 `;
 

@@ -3,16 +3,16 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
-    class="sc-fzqBZW llrcoi"
+    class="sc-fzqNJr cfIWbK"
   >
     <div
-      class="sc-fzoyAV jYYoNM"
+      class="sc-fzoLag jfWZnB"
     >
       <div
-        class="sc-fzplWN gHhTD"
+        class="sc-fznyAO ejGegJ"
       >
         <div
-          class="sc-fznyAO gqaNFL"
+          class="sc-fznKkj zxqmm"
         >
           <svg
             height="200"
@@ -21,42 +21,42 @@ exports[`renders correctly 1`] = `
             Logo.svg
           </svg>
           <div
-            class="sc-fzokOt gcdrkZ"
+            class="sc-fzqBZW kvyVsY"
           >
             <h1
-              class="sc-fznZeY eqDpMx"
+              class="sc-fzokOt jCbkru"
             >
               Endless stories at the tips of your fingers.
             </h1>
             <h1
-              class="sc-fznZeY eqDpMx"
+              class="sc-fzokOt jCbkru"
             >
               Create and Discover now.
             </h1>
           </div>
           <div
-            class="sc-fznKkj jewRRC"
+            class="sc-fznZeY hGgTbG"
           >
             <a
               href="/signup"
             >
               <button
-                class="sc-fzoLsD OgTwT"
+                class="sc-fzpans gcNfML"
                 data-testid="Button"
               >
                 <p
-                  class="sc-fzpans jBkoMV"
+                  class="sc-fzplWN clgpog"
                 >
                   Start Discovering
                 </p>
               </button>
             </a>
             <button
-              class="sc-fzoLsD OgTwT"
+              class="sc-fzpans gcNfML"
               data-testid="Button"
             >
               <p
-                class="sc-fzpans jBkoMV"
+                class="sc-fzplWN clgpog"
               >
                 Why Writifi?
               </p>
@@ -65,10 +65,10 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <aside
-        class="sc-fzqNJr kcBmoJ"
+        class="sc-fzoyAV hzymty"
       >
         <div
-          class="sc-AxjAm jjKCsO"
+          class="sc-AxjAm cxYwep"
         >
           <div
             class="sc-AxirZ fxlTtO"
@@ -108,7 +108,7 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-AxjAm jjKCsO"
+          class="sc-AxjAm cxYwep"
         >
           <div
             class="sc-AxirZ kbkaQd"
@@ -150,118 +150,134 @@ exports[`renders correctly 1`] = `
       </aside>
     </div>
     <div
-      class="sc-fzoLag hVCPnY"
+      class="sc-fzoXzr cAJdae"
     >
       <div
-        class="sc-AxhUy fygIbw"
+        class="sc-AxhUy egFiXe"
       >
-        <h3
-          class="sc-AxgMl cDHFlD"
-        >
-          My cool story about something...
-        </h3>
-        <p
-          class="sc-AxheI bseEco"
-        >
-          This is the description of my story to somewhat sums it up...
-        </p>
         <div
-          class="sc-Axmtr iIIBwQ"
+          class="sc-AxgMl lhehUv"
         >
           <h3
-            class="sc-AxmLO lkchWc"
+            class="sc-AxheI hhptHN"
           >
-            Christian Huffman
+            My cool story about something...
           </h3>
           <p
-            class="sc-fzozJi fOLmBr"
+            class="sc-Axmtr dBzwKj"
           >
-            @ some date in time
+            This is the description of my story to somewhat sums it up...
           </p>
+          <div
+            class="sc-AxmLO iqywtB"
+          >
+            <h3
+              class="sc-fzozJi dfFTYx"
+            >
+              Christian Huffman
+            </h3>
+            <p
+              class="sc-fzoLsD gORiZZ"
+            >
+              @ some date in time
+            </p>
+          </div>
         </div>
       </div>
       <div
-        class="sc-AxhUy fygIbw"
+        class="sc-AxhUy egFiXe"
       >
-        <h3
-          class="sc-AxgMl cDHFlD"
-        >
-          My cool story about something...
-        </h3>
-        <p
-          class="sc-AxheI bseEco"
-        >
-          This is the description of my story to somewhat sums it up...
-        </p>
         <div
-          class="sc-Axmtr iIIBwQ"
+          class="sc-AxgMl lhehUv"
         >
           <h3
-            class="sc-AxmLO lkchWc"
+            class="sc-AxheI hhptHN"
           >
-            Christian Huffman
+            My cool story about something...
           </h3>
           <p
-            class="sc-fzozJi fOLmBr"
+            class="sc-Axmtr dBzwKj"
           >
-            @ some date in time
+            This is the description of my story to somewhat sums it up...
           </p>
+          <div
+            class="sc-AxmLO iqywtB"
+          >
+            <h3
+              class="sc-fzozJi dfFTYx"
+            >
+              Christian Huffman
+            </h3>
+            <p
+              class="sc-fzoLsD gORiZZ"
+            >
+              @ some date in time
+            </p>
+          </div>
         </div>
       </div>
       <div
-        class="sc-AxhUy fygIbw"
+        class="sc-AxhUy egFiXe"
       >
-        <h3
-          class="sc-AxgMl cDHFlD"
-        >
-          My cool story about something...
-        </h3>
-        <p
-          class="sc-AxheI bseEco"
-        >
-          This is the description of my story to somewhat sums it up...
-        </p>
         <div
-          class="sc-Axmtr iIIBwQ"
+          class="sc-AxgMl lhehUv"
         >
           <h3
-            class="sc-AxmLO lkchWc"
+            class="sc-AxheI hhptHN"
           >
-            Christian Huffman
+            My cool story about something...
           </h3>
           <p
-            class="sc-fzozJi fOLmBr"
+            class="sc-Axmtr dBzwKj"
           >
-            @ some date in time
+            This is the description of my story to somewhat sums it up...
           </p>
+          <div
+            class="sc-AxmLO iqywtB"
+          >
+            <h3
+              class="sc-fzozJi dfFTYx"
+            >
+              Christian Huffman
+            </h3>
+            <p
+              class="sc-fzoLsD gORiZZ"
+            >
+              @ some date in time
+            </p>
+          </div>
         </div>
       </div>
       <div
-        class="sc-AxhUy fygIbw"
+        class="sc-AxhUy egFiXe"
       >
-        <h3
-          class="sc-AxgMl cDHFlD"
-        >
-          My cool story about something...
-        </h3>
-        <p
-          class="sc-AxheI bseEco"
-        >
-          This is the description of my story to somewhat sums it up...
-        </p>
         <div
-          class="sc-Axmtr iIIBwQ"
+          class="sc-AxgMl lhehUv"
         >
           <h3
-            class="sc-AxmLO lkchWc"
+            class="sc-AxheI hhptHN"
           >
-            Christian Huffman
+            My cool story about something...
           </h3>
           <p
-            class="sc-fzozJi fOLmBr"
+            class="sc-Axmtr dBzwKj"
           >
-            @ some date in time
+            This is the description of my story to somewhat sums it up...
           </p>
+          <div
+            class="sc-AxmLO iqywtB"
+          >
+            <h3
+              class="sc-fzozJi dfFTYx"
+            >
+              Christian Huffman
+            </h3>
+            <p
+              class="sc-fzoLsD gORiZZ"
+            >
+              @ some date in time
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
 exports[`renders correctly | Editors Choice 1`] = `
 <div>
   <div
-    class="sc-AxjAm jjKCsO"
+    class="sc-AxjAm cxYwep"
   >
     <div
       class="sc-AxirZ kbkaQd"
@@ -48,7 +48,7 @@ exports[`renders correctly | Editors Choice 1`] = `
 exports[`renders correctly | Featured 1`] = `
 <div>
   <div
-    class="sc-AxjAm jjKCsO"
+    class="sc-AxjAm cxYwep"
   >
     <div
       class="sc-AxirZ fxlTtO"

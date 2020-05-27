@@ -3,31 +3,35 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
-    class="sc-AxjAm dHoa-dm"
+    class="sc-AxjAm dFThfg"
   >
-    <h3
-      class="sc-AxirZ iikLxs"
-    >
-      A cool story title
-    </h3>
-    <p
-      class="sc-AxiKw iybPXJ"
-    >
-      This is a placeholder description for the test...
-    </p>
     <div
-      class="sc-AxhCb hPxPbm"
+      class="sc-AxirZ gVoMek"
     >
       <h3
-        class="sc-AxhUy kA-DEXK"
+        class="sc-AxiKw ccrnDg"
       >
-        Christian Huffman
+        A cool story title
       </h3>
       <p
-        class="sc-AxgMl jFrhBS"
+        class="sc-AxhCb kQwkjh"
       >
-        @ Some time...
+        This is a placeholder description for the test...
       </p>
+      <div
+        class="sc-AxhUy jZLOLz"
+      >
+        <h3
+          class="sc-AxgMl gQjXZo"
+        >
+          Christian Huffman
+        </h3>
+        <p
+          class="sc-AxheI nkKvw"
+        >
+          @ Some time...
+        </p>
+      </div>
     </div>
   </div>
 </div>

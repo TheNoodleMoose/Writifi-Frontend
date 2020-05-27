@@ -16,12 +16,14 @@ const StoryCard = ({
 }: StoryCardProps) => {
   return (
     <CardContainer>
-      <TitleText>{title}</TitleText>
-      <DescriptionText>{description}</DescriptionText>
-      <DetailsContainer>
-        <AuthorText>{`${author}`}</AuthorText>
-        <DateText>{`@ ${createdAt}`}</DateText>
-      </DetailsContainer>
+      <ContentContainer>
+        <TitleText>{title}</TitleText>
+        <DescriptionText>{description}</DescriptionText>
+        <DetailsContainer>
+          <AuthorText>{`${author}`}</AuthorText>
+          <DateText>{`@ ${createdAt}`}</DateText>
+        </DetailsContainer>
+      </ContentContainer>
     </CardContainer>
   );
 };
@@ -30,20 +32,27 @@ export default StoryCard;
 
 const CardContainer = styled.div`
   background-color: white;
-  margin: 20px 0 20px 20px;
-  padding: 20px;
+  margin: 20px 0;
+  padding: 20px 0;
   border-radius: 4px;
-  width: 45%;
+  width: 100%;
   min-height: 150px;
   min-width: 275px;
+  max-width: 68.5%;
+
+  @media (max-width: 768px) {
+    padding: 15px 0;
+    margin: 20px 0;
+    max-width: 100%;
+  }
+`;
+
+const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  @media (max-width: 768px) {
-    padding: 15px;
-    margin: 20px 0;
-  }
+  margin-left: 20px;
+  min-height: 150px;
 `;
 
 const TitleText = styled.h3`

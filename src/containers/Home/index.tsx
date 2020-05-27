@@ -58,8 +58,7 @@ const Home = () => {
 export default Home;
 
 const HomeContainer = styled.div`
-  width: 60%;
-  margin: auto;
+  margin: 0 10% 0 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,6 +71,7 @@ const HomeContainer = styled.div`
 
 const Sidebar = styled.aside`
   width: 35%;
+  margin-left: 20px;
   @media (max-width: 768px) {
     display: none;
   }
@@ -80,12 +80,13 @@ const Sidebar = styled.aside`
 const ContentContainer = styled.div`
   display: flex;
   justify-content: space-around;
+  width: 100%;
 `;
 
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
 `;

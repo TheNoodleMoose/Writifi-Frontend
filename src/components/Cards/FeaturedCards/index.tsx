@@ -43,7 +43,7 @@ interface StyleProps {
 }
 
 const CardContainer = styled.div`
-  width: 300px;
+  width: 100%;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: white;
