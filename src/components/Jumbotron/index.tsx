@@ -10,8 +10,12 @@ const Jumbotron = () => {
       <ContentContainer>
         <LogoSvg width="200" height="200" />
         <TitleContainer>
-          <TitleText>Endless stories at the tips of your fingers.</TitleText>
+          <TitleText>Endless reading at the tips of your fingers.</TitleText>
           <TitleText>Create and Discover now.</TitleText>
+          <TitleDescription>
+            Writifi is a writing platform that focuses on the content you want
+            to create and discover.
+          </TitleDescription>
         </TitleContainer>
 
         <ButtonContainer>
@@ -60,6 +64,17 @@ const TitleText = styled.h1`
   text-align: center;
   color: #2c3e50;
   margin: 15px 0;
+  @media (max-width: 768px) {
+    font-size: 1.4em;
+  }
+`;
+
+const TitleDescription = styled.p`
+  font-size: 1.3em;
+  font-weight: 500;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
 `;
 
 const TitleContainer = styled.div``;

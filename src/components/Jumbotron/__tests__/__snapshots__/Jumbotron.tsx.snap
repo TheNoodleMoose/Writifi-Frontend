@@ -15,18 +15,23 @@ exports[`renders correctly 1`] = `
         Logo.svg
       </svg>
       <div
-        class="sc-AxheI fniENP"
+        class="sc-Axmtr hBVTto"
       >
         <h1
-          class="sc-AxgMl kAyckS"
+          class="sc-AxgMl fLNeVe"
         >
-          Endless stories at the tips of your fingers.
+          Endless reading at the tips of your fingers.
         </h1>
         <h1
-          class="sc-AxgMl kAyckS"
+          class="sc-AxgMl fLNeVe"
         >
           Create and Discover now.
         </h1>
+        <p
+          class="sc-AxheI kLuIFW"
+        >
+          Writifi is a writing platform that focuses on the content you want to create and discover.
+        </p>
       </div>
       <div
         class="sc-AxhUy dIrXSn"

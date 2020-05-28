@@ -39,6 +39,9 @@ const CardContainer = styled.div`
   min-height: 150px;
   min-width: 275px;
   max-width: 68.5%;
+  -webkit-box-shadow: 0px 0px 14px 5px rgba(232, 232, 232, 1);
+  -moz-box-shadow: 0px 0px 14px 5px rgba(232, 232, 232, 1);
+  box-shadow: 0px 0px 14px 5px rgba(232, 232, 232, 1);
 
   @media (max-width: 768px) {
     padding: 15px 0;

@@ -54,10 +54,16 @@ const WelcomeTitle = styled.h3`
   font-size: 4em;
   font-weight: bold;
   color: #2c3e50;
+  @media (max-width: 768px) {
+    font-size: 3em;
+  }
 `;
 
 const WelcomeDescription = styled.p`
   font-size: 2em;
   color: #2c3e50;
   font-weight: 500;
+  @media (max-width: 768px) {
+    font-size: 1.3em;
+  }
 `;

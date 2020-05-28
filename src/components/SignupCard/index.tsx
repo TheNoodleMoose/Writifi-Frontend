@@ -3,13 +3,26 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
 
-const LoginCard = () => {
+const SignupCard = () => {
   const { handleSubmit, register, errors } = useForm();
   const onSubmit = (values: any) => console.log(values);
 
   const hasErrors = errors.email || errors.password;
   return (
-    <LoginCardForm onSubmit={handleSubmit(onSubmit)}>
+    <SignupCardForm onSubmit={handleSubmit(onSubmit)}>
+      <InputContainer>
+        <InputLabel hasErrors={errors.username}>Username</InputLabel>
+        <InputField
+          hasErrors={errors.username}
+          name="username"
+          type="username"
+          placeholder="Username"
+          ref={register({
+            required: "Please enter a username."
+          })}
+        />
+        <InputError>{errors.username && errors.username.message}</InputError>
+      </InputContainer>
       <InputContainer>
         <InputLabel hasErrors={errors.email}>Email</InputLabel>
         <InputField
@@ -42,22 +55,22 @@ const LoginCard = () => {
         />
         <InputError>{errors.password && errors.password.message}</InputError>
       </InputContainer>
-      <LoginButton type="submit" hasErrors={hasErrors} value="Login" />
+      <SignupButton type="submit" hasErrors={hasErrors} value="Signup" />
       <CreateAccountText>
-        Don't have an account?
-        <CreateAccountLink to="/signup"> Create one!</CreateAccountLink>
+        Already have an account?
+        <CreateAccountLink to="/login"> Login!</CreateAccountLink>
       </CreateAccountText>
-    </LoginCardForm>
+    </SignupCardForm>
   );
 };
 
-export default LoginCard;
+export default SignupCard;
 
 interface StyleProps {
   hasErrors: boolean;
 }
 
-const LoginCardForm = styled.form`
+const SignupCardForm = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -87,10 +100,12 @@ const InputLabel = styled.label<StyleProps>`
   color: ${({ hasErrors }) => (hasErrors ? "#f76140" : "#2c3e50")};
 `;
 
-const LoginButton = styled.input<StyleProps>`
+const SignupButton = styled.input<StyleProps>`
   height: 50px;
+  min-height: 50px;
   background: transparent;
   border-radius: 3px;
+  margin-bottom: 20px;
   border: 2px solid ${({ hasErrors }) => (hasErrors ? "#f76140" : " #2c3e50")};
   color: ${({ hasErrors }) => (hasErrors ? "#f76140" : "#2c3e50")};
   padding: 0 20px;

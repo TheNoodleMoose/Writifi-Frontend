@@ -3,10 +3,10 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
-    class="sc-fzqNJr cfIWbK"
+    class="sc-fzoyAV kRLstc"
   >
     <div
-      class="sc-fzoLag jfWZnB"
+      class="sc-fzoXzr hYbMmf"
     >
       <div
         class="sc-fznyAO ejGegJ"
@@ -21,18 +21,23 @@ exports[`renders correctly 1`] = `
             Logo.svg
           </svg>
           <div
-            class="sc-fzqBZW kvyVsY"
+            class="sc-fzqNJr cPhlSZ"
           >
             <h1
-              class="sc-fzokOt jCbkru"
+              class="sc-fzokOt iCLnaC"
             >
-              Endless stories at the tips of your fingers.
+              Endless reading at the tips of your fingers.
             </h1>
             <h1
-              class="sc-fzokOt jCbkru"
+              class="sc-fzokOt iCLnaC"
             >
               Create and Discover now.
             </h1>
+            <p
+              class="sc-fzqBZW lmkqol"
+            >
+              Writifi is a writing platform that focuses on the content you want to create and discover.
+            </p>
           </div>
           <div
             class="sc-fznZeY hGgTbG"
@@ -65,7 +70,7 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <aside
-        class="sc-fzoyAV hzymty"
+        class="sc-fzoLag cUexAy"
       >
         <div
           class="sc-AxjAm cxYwep"
@@ -150,10 +155,10 @@ exports[`renders correctly 1`] = `
       </aside>
     </div>
     <div
-      class="sc-fzoXzr cAJdae"
+      class="sc-fzpjYC fqkWnN"
     >
       <div
-        class="sc-AxhUy egFiXe"
+        class="sc-AxhUy bdLdpE"
       >
         <div
           class="sc-AxgMl lhehUv"
@@ -185,7 +190,7 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="sc-AxhUy egFiXe"
+        class="sc-AxhUy bdLdpE"
       >
         <div
           class="sc-AxgMl lhehUv"
@@ -217,7 +222,7 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="sc-AxhUy egFiXe"
+        class="sc-AxhUy bdLdpE"
       >
         <div
           class="sc-AxgMl lhehUv"
@@ -249,7 +254,7 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="sc-AxhUy egFiXe"
+        class="sc-AxhUy bdLdpE"
       >
         <div
           class="sc-AxgMl lhehUv"
