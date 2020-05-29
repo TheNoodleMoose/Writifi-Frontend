@@ -16,7 +16,7 @@ const stateLink = withClientState({
 
 export const createApolloClient = (token: string) => {
   const httplink = createHttpLink({
-    uri: "https://nor6s.sse.codesandbox.io/",
+    uri: "http://localhost:4000",
     includeExtensions: true,
     headers: {
       Authorization: `Bearer ${token}`
