@@ -4,8 +4,13 @@ export const GET_FEED = gql`
   query GetFeed {
     feed {
       id
-      url
+      title
+      content
+      createdAt
       description
+      postedBy {
+        username
+      }
     }
   }
 `;

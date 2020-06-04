@@ -1,13 +1,36 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
+import { useMutation } from "@apollo/react-hooks";
+import { SIGNUP } from "./queries";
+import AuthContext from "../../utils/auth-context";
 
 const SignupCard = () => {
   const { handleSubmit, register, errors } = useForm();
-  const onSubmit = (values: any) => console.log(values);
+  const authContext = useContext(AuthContext);
 
-  const hasErrors = errors.email || errors.password;
+  const history = useHistory();
+  const [signup, { error: signupErrors }] = useMutation(SIGNUP, {
+    onCompleted: ({ signup: signupResponse }) => {
+      if (signupResponse.token) {
+        authContext.login(signupResponse.token, signupResponse.user.id);
+        history.push("/");
+      }
+    }
+  });
+
+  const onSubmit = (values: any) => {
+    signup({
+      variables: {
+        email: values.email,
+        password: values.password,
+        username: values.username
+      }
+    });
+  };
+  const hasErrors = errors.email || errors.password || signupErrors;
+
   return (
     <SignupCardForm onSubmit={handleSubmit(onSubmit)}>
       <InputContainer>
@@ -21,7 +44,7 @@ const SignupCard = () => {
             required: "Please enter a username."
           })}
         />
-        <InputError>{errors.username && errors.username.message}</InputError>
+        <InputError>{errors?.username?.message}</InputError>
       </InputContainer>
       <InputContainer>
         <InputLabel hasErrors={errors.email}>Email</InputLabel>
@@ -38,7 +61,7 @@ const SignupCard = () => {
             }
           })}
         />
-        <InputError>{errors.email && errors.email.message}</InputError>
+        <InputError>{errors?.email?.message}</InputError>
       </InputContainer>
       <InputContainer>
         <InputLabel hasErrors={errors.password}>Password</InputLabel>
@@ -48,14 +71,13 @@ const SignupCard = () => {
           type="password"
           placeholder="Password"
           ref={register({
-            required: "Please enter a password",
-            validate: (value) =>
-              value === "password" || "Please enter correct password."
+            required: "Please enter a password"
           })}
         />
-        <InputError>{errors.password && errors.password.message}</InputError>
+        <InputError>{errors?.password?.message}</InputError>
       </InputContainer>
       <SignupButton type="submit" hasErrors={hasErrors} value="Signup" />
+      <InputError>{signupErrors?.message}</InputError>
       <CreateAccountText>
         Already have an account?
         <CreateAccountLink to="/login"> Login!</CreateAccountLink>

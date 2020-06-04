@@ -1,13 +1,40 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useMutation } from "@apollo/react-hooks";
+import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
+import { LOGIN } from "./queries";
+import AuthContext from "../../utils/auth-context";
 
 const LoginCard = () => {
+  const authContext = useContext(AuthContext);
   const { handleSubmit, register, errors } = useForm();
-  const onSubmit = (values: any) => console.log(values);
+  const history = useHistory();
+  const [login, { error: loginErrors }] = useMutation(LOGIN, {
+    onCompleted: ({ login: loginResponse }) => {
+      if (loginResponse.token) {
+        authContext.login(loginResponse.token, loginResponse.user.id);
+        history.push("/");
+      }
+    },
+    onError: (error) => {
+      if (error.message === "GraphQL error: Invalid password") {
+        errors.auth = {
+          message: "Invalid password"
+        };
+      }
+    }
+  });
 
-  const hasErrors = errors.email || errors.password;
+  const onSubmit = async (values: any) => {
+    login({
+      variables: { email: values.email, password: values.password }
+    });
+  };
+
+  const hasErrors = errors.email || errors.password || loginErrors;
+
   return (
     <LoginCardForm onSubmit={handleSubmit(onSubmit)}>
       <InputContainer>
@@ -35,14 +62,14 @@ const LoginCard = () => {
           type="password"
           placeholder="Password"
           ref={register({
-            required: "Please enter a password",
-            validate: (value) =>
-              value === "password" || "Please enter correct password."
+            required: "Please enter a password"
           })}
         />
         <InputError>{errors.password && errors.password.message}</InputError>
       </InputContainer>
       <LoginButton type="submit" hasErrors={hasErrors} value="Login" />
+      <InputError>{loginErrors && loginErrors.message}</InputError>
+
       <CreateAccountText>
         Don't have an account?
         <CreateAccountLink to="/signup"> Create one!</CreateAccountLink>
@@ -103,6 +130,13 @@ const LoginButton = styled.input<StyleProps>`
       hasErrors ? "#f76140" : " #2c3e50"};
     border-color: ${({ hasErrors }) => (hasErrors ? "#f76140" : "#2c3e50")};
   }
+
+  :focus {
+    color: white;
+    background-color: ${({ hasErrors }) =>
+      hasErrors ? "#f76140" : " #2c3e50"};
+    border-color: ${({ hasErrors }) => (hasErrors ? "#f76140" : "#2c3e50")};
+  }
 `;
 
 const InputField = styled.input<StyleProps>`
@@ -112,6 +146,9 @@ const InputField = styled.input<StyleProps>`
   border-radius: 4px;
   font-size: 16px;
   border: 2px solid ${({ hasErrors }) => (hasErrors ? "#f76140" : " #2c3e50")};
+  :focus {
+    border: 2px solid ${({ hasErrors }) => (hasErrors ? "#f76140" : " #2c3e50")};
+  }
 `;
 
 const InputError = styled.p`

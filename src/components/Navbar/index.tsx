@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button";
 import styled from "styled-components";
 import { ReactComponent as LogoSvg } from "../../assets/svgs/Logo.svg";
+import AuthContext from "../../utils/auth-context";
 
 const Navbar = () => {
+  const { token, userId, logout } = useContext(AuthContext);
   return (
     <NavContainer>
       <NavLink to="/">
@@ -14,12 +16,21 @@ const Navbar = () => {
         </TitleContainer>
       </NavLink>
       <LinkContainer>
-        <NavLink to="/signup">
-          <NavItemText>Sign up</NavItemText>
-        </NavLink>
-        <Link to="/login">
-          <Button text="Login" />
-        </Link>
+        {token ? (
+          <>
+            <Button text="Dashboard" />
+            <Button text="Sign out" handleClick={() => logout(token, userId)} />
+          </>
+        ) : (
+          <>
+            <NavLink to="/signup">
+              <NavItemText>Sign up</NavItemText>
+            </NavLink>
+            <Link to="/login">
+              <Button text="Login" />
+            </Link>
+          </>
+        )}
       </LinkContainer>
     </NavContainer>
   );

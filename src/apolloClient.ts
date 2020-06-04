@@ -16,7 +16,7 @@ const stateLink = withClientState({
 
 export const createApolloClient = (token: string) => {
   const httplink = createHttpLink({
-    uri: "http://localhost:4000",
+    uri: "https://writifi-backend.herokuapp.com/",
     includeExtensions: true,
     headers: {
       Authorization: `Bearer ${token}`

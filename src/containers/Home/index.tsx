@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { useQuery } from "react-apollo-hooks";
+import { useQuery } from "@apollo/react-hooks";
 import FeaturedCard, {
   FeaturedCardType
 } from "../../components/Cards/FeaturedCards";
@@ -8,52 +8,39 @@ import StoryCard from "../../components/Cards/StoryCard";
 import Jumbotron from "../../components/Jumbotron";
 import { GET_FEED } from "./queries";
 
+interface StoryInterface {
+  id: string;
+  title: string;
+  postedBy: {
+    id: string;
+    username: string;
+  };
+  createdAt: string;
+  description: string;
+}
+
 const Home = () => {
-  // const { data: { feed = {} } = {} } = useQuery(GET_FEED);
+  const { data: { feed = [] } = {} } = useQuery(GET_FEED);
 
   return (
     <HomeContainer>
       <ContentContainer>
         <Jumbotron />
-
         <Sidebar>
           <FeaturedCard type={FeaturedCardType.featured} />
           <FeaturedCard type={FeaturedCardType.editorsChoice} />
         </Sidebar>
       </ContentContainer>
       <CardContainer>
-        <StoryCard
-          title={"My cool story about something..."}
-          author={"Christian Huffman"}
-          createdAt={"some date in time"}
-          description={
-            "This is the description of my story to somewhat sums it up..."
-          }
-        />
-        <StoryCard
-          title={"My cool story about something..."}
-          author={"Christian Huffman"}
-          createdAt={"some date in time"}
-          description={
-            "This is the description of my story to somewhat sums it up..."
-          }
-        />
-        <StoryCard
-          title={"My cool story about something..."}
-          author={"Christian Huffman"}
-          createdAt={"some date in time"}
-          description={
-            "This is the description of my story to somewhat sums it up..."
-          }
-        />
-        <StoryCard
-          title={"My cool story about something..."}
-          author={"Christian Huffman"}
-          createdAt={"some date in time"}
-          description={
-            "This is the description of my story to somewhat sums it up..."
-          }
-        />
+        {feed.map((story: StoryInterface) => (
+          <StoryCard
+            key={story.id}
+            title={story.title}
+            author={story.postedBy.username}
+            createdAt={story.createdAt}
+            description={story.description}
+          />
+        ))}
       </CardContainer>
     </HomeContainer>
   );
