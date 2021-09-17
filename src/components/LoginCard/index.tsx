@@ -1,15 +1,17 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useMutation } from "@apollo/react-hooks";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useForm } from "react-hook-form";
+import { useFormik } from "formik";
 import styled from "styled-components";
 import { LOGIN } from "./queries";
 import AuthContext from "../../utils/auth-context";
 
 const LoginCard = () => {
   const authContext = useContext(AuthContext);
-  const { handleSubmit, register, errors } = useForm();
+  const [errors, setErrors] = useState<{ authError?: { message?: string } }>(
+    {}
+  );
   const history = useHistory();
   const [login, { error: loginErrors }] = useMutation(LOGIN, {
     onCompleted: ({ login: loginResponse }) => {
@@ -20,55 +22,61 @@ const LoginCard = () => {
     },
     onError: (error) => {
       if (error.message === "GraphQL error: Invalid password") {
-        errors.auth = {
-          message: "Invalid password"
-        };
+        setErrors({ authError: { message: "Invalid password or email" } });
       }
     }
   });
 
-  const onSubmit = async (values: any) => {
+  const onSubmit = async (values: { email: string; password: string }) => {
     login({
       variables: { email: values.email, password: values.password }
     });
   };
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: ""
+    },
 
-  const hasErrors = errors.email || errors.password || loginErrors;
+    onSubmit: (values) => onSubmit(values)
+  });
+
+  const hasErrors = !!(
+    formik.errors.email ||
+    formik.errors.password ||
+    loginErrors
+  );
 
   return (
-    <LoginCardForm onSubmit={handleSubmit(onSubmit)}>
+    <LoginCardForm onSubmit={formik.handleSubmit}>
       <InputContainer>
-        <InputLabel hasErrors={errors.email}>Email</InputLabel>
+        <InputLabel hasErrors={!!formik.errors.email}>Email</InputLabel>
         <InputField
-          hasErrors={errors.email}
+          hasErrors={!!formik.errors.email}
           name="email"
           type="email"
           placeholder="Email"
-          ref={register({
-            required: "Please enter an email.",
-            pattern: {
-              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-              message: "Invalid email address"
-            }
-          })}
+          onChange={formik.handleChange}
+          value={formik.values.email}
         />
-        <InputError>{errors.email && errors.email.message}</InputError>
+        <InputError>{formik.errors.email && formik.errors.email[0]}</InputError>
       </InputContainer>
       <InputContainer>
-        <InputLabel hasErrors={errors.password}>Password</InputLabel>
+        <InputLabel hasErrors={!!formik.errors.password}>Password</InputLabel>
         <InputField
-          hasErrors={errors.password}
+          hasErrors={!!formik.errors.password}
           name="password"
           type="password"
           placeholder="Password"
-          ref={register({
-            required: "Please enter a password"
-          })}
+          onChange={formik.handleChange}
+          value={formik.values.password}
         />
-        <InputError>{errors.password && errors.password.message}</InputError>
+        <InputError>
+          {formik.errors.password && formik.errors.password[0]}
+        </InputError>
       </InputContainer>
       <LoginButton type="submit" hasErrors={hasErrors} value="Login" />
-      <InputError>{loginErrors && loginErrors.message}</InputError>
+      <InputError>{errors && errors?.authError?.message}</InputError>
 
       <CreateAccountText>
         Don't have an account?

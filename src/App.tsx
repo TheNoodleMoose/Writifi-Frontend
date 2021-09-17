@@ -21,7 +21,7 @@ function App() {
 
   const login = (token: string, userId: string) => {
     Cookies.set("crsToken", token, {
-      sameSite: "none",
+      sameSite: "None",
       secure: true
     });
     setToken(token);
