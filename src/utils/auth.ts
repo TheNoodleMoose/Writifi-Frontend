@@ -1,2 +1,3 @@
-export const getJwtToken = () => localStorage.getItem("jwtToken") || "";
-export const getUserId = () => localStorage.getItem("userId") || "";
+import Cookies from "js-cookie";
+
+export const getJwtToken = () => Cookies.get("crsToken") || "";
