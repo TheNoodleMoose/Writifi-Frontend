@@ -1,6 +1,6 @@
 # Writifi Frontend - Created with Create-React-App
 
-![](https://github.com/TheNoodleMoose/Writifi-Frontend-React/workflows/Node%20CI/badge.svg)
+[![Run Tests](https://github.com/TheNoodleMoose/Writifi-Frontend/actions/workflows/runTests.yml/badge.svg)](https://github.com/TheNoodleMoose/Writifi-Frontend/actions/workflows/runTests.yml)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/018b4618-47cc-4e50-ba7c-b1a5588a6e54/deploy-status)](https://app.netlify.com/sites/writifi/deploys)
 
