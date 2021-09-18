@@ -9,26 +9,27 @@ import Navbar from "./components/Navbar";
 
 import { createApolloClient } from "./apolloClient";
 import AuthContext from "./utils/auth-context";
-import { getJwtToken, getUserId } from "./utils/auth";
+import { getJwtToken } from "./utils/auth";
+import Cookies from "js-cookie";
 
 function App() {
   const authToken = getJwtToken();
-  const authUserId = getUserId();
   const apolloClient = createApolloClient(authToken);
 
   const [token, setToken] = useState(authToken);
-  const [userId, setUserId] = useState(authUserId);
+  const [userId, setUserId] = useState("");
 
   const login = (token: string, userId: string) => {
-    localStorage.setItem("jwtToken", token);
-    localStorage.setItem("userId", userId);
+    Cookies.set("crsToken", token, {
+      sameSite: "None",
+      secure: true
+    });
     setToken(token);
     setUserId(userId);
   };
 
   const logout = () => {
-    localStorage.removeItem("jwtToken");
-    localStorage.removeItem("userId");
+    Cookies.remove("crsToken");
     setToken("");
     setUserId("");
   };

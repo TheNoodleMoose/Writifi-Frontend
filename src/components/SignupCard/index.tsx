@@ -1,13 +1,12 @@
 import React, { useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { useForm } from "react-hook-form";
+import { useFormik } from "formik";
 import styled from "styled-components";
 import { useMutation } from "@apollo/react-hooks";
 import { SIGNUP } from "./queries";
 import AuthContext from "../../utils/auth-context";
 
 const SignupCard = () => {
-  const { handleSubmit, register, errors } = useForm();
   const authContext = useContext(AuthContext);
 
   const history = useHistory();
@@ -20,7 +19,11 @@ const SignupCard = () => {
     }
   });
 
-  const onSubmit = (values: any) => {
+  const onSubmit = (values: {
+    email: string;
+    password: string;
+    username: string;
+  }) => {
     signup({
       variables: {
         email: values.email,
@@ -29,52 +32,63 @@ const SignupCard = () => {
       }
     });
   };
-  const hasErrors = errors.email || errors.password || signupErrors;
+
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+      username: ""
+    },
+
+    onSubmit: (values) => onSubmit(values)
+  });
+  const hasErrors = !!(
+    formik.errors.email ||
+    formik.errors.password ||
+    signupErrors
+  );
 
   return (
-    <SignupCardForm onSubmit={handleSubmit(onSubmit)}>
+    <SignupCardForm onSubmit={formik.handleSubmit}>
       <InputContainer>
-        <InputLabel hasErrors={errors.username}>Username</InputLabel>
+        <InputLabel hasErrors={!!formik.errors.username}>Username</InputLabel>
         <InputField
-          hasErrors={errors.username}
+          hasErrors={!!formik.errors.username}
           name="username"
           type="username"
           placeholder="Username"
-          ref={register({
-            required: "Please enter a username."
-          })}
+          onChange={formik.handleChange}
+          value={formik.values.username}
         />
-        <InputError>{errors?.username?.message}</InputError>
+        <InputError>
+          {formik.errors.username && formik.errors.username[0]}
+        </InputError>
       </InputContainer>
       <InputContainer>
-        <InputLabel hasErrors={errors.email}>Email</InputLabel>
+        <InputLabel hasErrors={!!formik.errors.email}>Email</InputLabel>
         <InputField
-          hasErrors={errors.email}
+          hasErrors={!!formik.errors.email}
           name="email"
           type="email"
           placeholder="Email"
-          ref={register({
-            required: "Please enter an email.",
-            pattern: {
-              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-              message: "Invalid email address"
-            }
-          })}
+          onChange={formik.handleChange}
+          value={formik.values.email}
         />
-        <InputError>{errors?.email?.message}</InputError>
+        <InputError>{formik.errors.email && formik.errors.email[0]}</InputError>
       </InputContainer>
       <InputContainer>
-        <InputLabel hasErrors={errors.password}>Password</InputLabel>
+        <InputLabel hasErrors={!!formik.errors.password}>Password</InputLabel>
         <InputField
-          hasErrors={errors.password}
+          hasErrors={!!formik.errors.password}
           name="password"
           type="password"
           placeholder="Password"
-          ref={register({
-            required: "Please enter a password"
-          })}
+          onChange={formik.handleChange}
+          value={formik.values.password}
         />
-        <InputError>{errors?.password?.message}</InputError>
+        <InputError>
+          {formik.errors.password && formik.errors.password[0]}
+        </InputError>
       </InputContainer>
       <SignupButton type="submit" hasErrors={hasErrors} value="Signup" />
       <InputError>{signupErrors?.message}</InputError>
